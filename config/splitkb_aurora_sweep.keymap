@@ -51,11 +51,6 @@
             key-positions = <0 1>;
             bindings = <&out OUT_BLE>;
         };
-        combo_krita {
-            timeout-ms = <100>;
-            key-positions = <0 10 20>;
-            bindings = <&tog KRB>;
-        };
     };
 
     keymap {

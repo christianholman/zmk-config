@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors.dtsi>
 
-#define COLEMAK-DH 0
+#define COLEMAK 0
 #define NAV 1
 #define NUM 2
 #define SYM 3
@@ -60,20 +60,20 @@
                   &kp Q      &kp W       &kp F        &kp P        &kp B                          &kp J                     &kp L       &kp U           &kp Y        &kp SCLN
                   &mt LGUI A &mt LALT R  &mt LSHIFT S &mt LCTRL T  &mt LG(LA(LS(LCTRL))) G        &mt LG(LA(LS(LCTRL))) M   &mt LCTRL N &mt RSHIFT E    &mt LALT I   &mt LGUI O
                   &kp Z      &kp X       &kp C        &kp D        &kp V                          &kp K                     &kp H       &kp CMMA        &kp DOT      &kp FSLH
-                                                      &lt FUN TAB  &lt NAV SPC                    &lt SYM RET               &lt NUM BSPC
+                                                      &lt NUM TAB  &lt NAV SPC                    &lt SYM RET               &lt FUN BSPC
                 >;
         };
 
         nav_layer {
             bindings = <
                 &bt BT_CLR   &trans &trans &bootloader &reset               &trans      &kp LBRC   &kp RBRC &kp LPAR    &kp RPAR
-                &bt BT_SEL 0 &trans &trans &trans      &trans               &kp LEFT    &kp DOWN   &kp UP   &kp RIGHT   &trans
+                &bt BT_SEL 0 &trans &trans &trans      &trans               &trans      &kp LEFT   &kp DOWN &kp UP      &kp RIGHT   
                 &bt BT_SEL 1 &trans &trans &trans      &trans               &trans      &kp LBKT   &kp RBKT &trans      &trans
                                            &trans      &trans               &trans      &trans
                 >;
         };
 
-        num_layer {
+        fun_layer {
             bindings = <
                 &trans     &trans &trans &trans &trans                &trans    &trans   &trans &trans    &trans
                 &kp SQT    &trans &trans &trans &kp EQUAL             &trans    &trans   &trans &trans    &trans
@@ -91,11 +91,11 @@
                 >;
         };
 
-       fun_layer {
+       num_layer {
             bindings = <
-                &trans &trans &trans &trans &trans        &trans &kp N7    &kp N8    &kp N9    &trans
                 &trans &trans &trans &trans &trans        &trans &kp N4    &kp N5    &kp N6    &trans
                 &trans &trans &trans &trans &trans        &trans &kp N1    &kp N2    &kp N3    &trans
+                &trans &trans &trans &trans &trans        &trans &kp N7    &kp N8    &kp N9    &trans
                                      &trans &trans        &trans &kp N0
                 >;
         };

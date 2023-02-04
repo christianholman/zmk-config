@@ -9,9 +9,8 @@
 
 #define COLEMAKDH 0
 #define NAV 1
-#define NUM 2
-#define SYM 3
-#define FUN 4
+#define SYM 2
+#define NUM 3
 
 &mt {
     flavor = "tap-preferred";
@@ -23,6 +22,15 @@
         compatible = "zmk,combos";
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NAV SYM>;
+            then-layer = <NUM>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -31,7 +39,7 @@
   &kp Q   &kp W   &kp F   &kp P           &kp B      &kp J   &kp L      &kp U       &kp Y  &kp SINGLE_QUOTE
   &kp A   &kp R   &kp S   &kp T           &kp G      &kp M   &kp N      &kp E       &kp I             &kp O
   &kp Z   &kp X   &kp C   &kp D           &kp V      &kp K   &kp H  &kp COMMA  &kp PERIOD          &kp SEMI
-                          &mo 2  &kp LEFT_SHIFT  &kp SPACE   &mo 1
+                          &mo NAV  &kp LEFT_SHIFT  &kp SPACE   &mo SYM
             >;
         };
 
@@ -40,7 +48,7 @@
    &kp ESC  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS       &kp TILDE  &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET        &kp GRAVE
  &kp MINUS      &kp ASTERISK       &kp EQUAL             &kp UNDER      &kp DOLLAR   &kp HASH      &sk RIGHT_COMMAND    &sk RIGHT_ALT          &sk RCTRL  &kp RIGHT_SHIFT
   &kp PLUS          &kp PIPE          &kp AT             &kp SLASH     &kp PERCENT     &trans          &kp BACKSLASH    &kp AMPERSAND       &kp QUESTION  &kp EXCLAMATION
-                                                             &mo 3  &kp LEFT_SHIFT  &kp SPACE                  &mo 2
+                                                             &mo NAV  &kp LEFT_SHIFT  &kp SPACE                  &mo SYM
             >;
         };
 
@@ -49,7 +57,7 @@
         &kp ESC       &kp LG(TAB)        &trans            &trans       &kp K_VOL_UP    &kp C_RESET   &kp HOME    &trans  &trans     &trans
  &kp LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp K_VOLUME_DOWN  &kp BACKSPACE   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
          &trans            &trans        &trans            &trans   &kp C_PLAY_PAUSE         &trans  &kp ENTER    &trans  &trans     &trans
-                                                            &mo 2     &kp LEFT_SHIFT      &kp SPACE      &mo 3
+                                                            &mo NAV     &kp LEFT_SHIFT      &kp SPACE      &mo SYM
             >;
         };
 
@@ -58,7 +66,7 @@
    &kp NUMBER_7  &kp NUMBER_5  &kp NUMBER_3      &kp NUMBER_1  &kp NUMBER_9  &kp NUMBER_8       &kp NUMBER_0   &kp NUMBER_2       &kp NUMBER_4   &kp NUMBER_6
  &kp LEFT_SHIFT     &sk LCTRL  &sk LEFT_ALT  &sk LEFT_COMMAND       &kp F11       &kp F10  &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &kp BACKSPACE
          &kp F7        &kp F5        &kp F3            &kp F1        &kp F9        &kp F8            &kp F12         &kp F2             &kp F4         &kp F6
-                                                        &mo 2     &kp LSHFT     &kp SPACE              &mo 1
+                                                        &mo NAV     &kp LSHFT     &kp SPACE              &mo SYM
             >;
         };
     };

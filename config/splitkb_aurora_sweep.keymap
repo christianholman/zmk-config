@@ -44,7 +44,7 @@
 
         nav {
             bindings = <
-        &kp ESC       &kp LG(TAB)        &trans            &trans       &kp K_VOL_UP    &kp C_RESET   &kp HOME    &trans  &trans     &trans
+        &trans       &kp LG(TAB)        &kp ESC            &kp TAB       &kp K_VOL_UP    &kp C_RESET   &kp HOME    &trans  &trans     &trans
  &kp LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp K_VOLUME_DOWN  &kp BACKSPACE   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
          &trans            &trans        &trans            &trans   &kp C_PLAY_PAUSE         &trans  &kp ENTER    &trans  &trans     &trans
                                                             &mo NAV     &kp LEFT_SHIFT      &kp SPACE      &mo SYM

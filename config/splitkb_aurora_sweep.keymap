@@ -30,7 +30,6 @@
         };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,21 +42,21 @@
             >;
         };
 
-        sym {
-            bindings = <
-   &kp ESC  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS       &kp TILDE  &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET        &kp GRAVE
- &kp MINUS      &kp ASTERISK       &kp EQUAL             &kp UNDER      &kp DOLLAR   &kp HASH      &sk RIGHT_COMMAND    &sk RIGHT_ALT          &sk RCTRL  &kp RIGHT_SHIFT
-  &kp PLUS          &kp PIPE          &kp AT             &kp SLASH     &kp PERCENT     &trans          &kp BACKSLASH    &kp AMPERSAND       &kp QUESTION  &kp EXCLAMATION
-                                                             &mo NAV  &kp LEFT_SHIFT  &kp SPACE                  &mo SYM
-            >;
-        };
-
         nav {
             bindings = <
         &kp ESC       &kp LG(TAB)        &trans            &trans       &kp K_VOL_UP    &kp C_RESET   &kp HOME    &trans  &trans     &trans
  &kp LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp K_VOLUME_DOWN  &kp BACKSPACE   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
          &trans            &trans        &trans            &trans   &kp C_PLAY_PAUSE         &trans  &kp ENTER    &trans  &trans     &trans
                                                             &mo NAV     &kp LEFT_SHIFT      &kp SPACE      &mo SYM
+            >;
+        };
+
+        sym {
+            bindings = <
+   &kp ESC  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS       &kp TILDE  &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET        &kp GRAVE
+ &kp MINUS      &kp ASTERISK       &kp EQUAL             &kp UNDER      &kp DOLLAR   &kp HASH      &sk RIGHT_COMMAND    &sk RIGHT_ALT          &sk RCTRL  &kp RIGHT_SHIFT
+  &kp PLUS          &kp PIPE          &kp AT             &kp SLASH     &kp PERCENT     &trans          &kp BACKSLASH    &kp AMPERSAND       &kp QUESTION  &kp EXCLAMATION
+                                                             &mo NAV  &kp LEFT_SHIFT  &kp SPACE                  &mo SYM
             >;
         };
 

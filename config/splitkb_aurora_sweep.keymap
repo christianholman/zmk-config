@@ -38,7 +38,7 @@
         sym {
             bindings = <
    &kp ESC  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS       &kp TILDE  &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET        &kp GRAVE
- &kp MINUS      &kp ASTERISK       &kp EQUAL             &kp UNDER      &kp DOLLAR   &kp HASH      &kp RIGHT_COMMAND    &kp RIGHT_ALT          &kp RCTRL  &kp RIGHT_SHIFT
+ &kp MINUS      &kp ASTERISK       &kp EQUAL             &kp UNDER      &kp DOLLAR   &kp HASH      &sk RIGHT_COMMAND    &sk RIGHT_ALT          &sk RCTRL  &kp RIGHT_SHIFT
   &kp PLUS          &kp PIPE          &kp AT             &kp SLASH     &kp PERCENT     &trans          &kp BACKSLASH    &kp AMPERSAND       &kp QUESTION  &kp EXCLAMATION
                                                              &sl 3  &kp LEFT_SHIFT  &kp SPACE                  &sl 2
             >;
@@ -47,7 +47,7 @@
         nav {
             bindings = <
         &kp ESC       &kp LG(TAB)        &trans            &trans       &kp K_VOL_UP    &kp C_RESET   &kp HOME    &trans  &trans     &trans
- &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp K_VOLUME_DOWN  &kp BACKSPACE   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+ &kp LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_COMMAND  &kp K_VOLUME_DOWN  &kp BACKSPACE   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
          &trans            &trans        &trans            &trans   &kp C_PLAY_PAUSE         &trans  &kp ENTER    &trans  &trans     &trans
                                                             &sl 2     &kp LEFT_SHIFT      &kp SPACE      &sl 3
             >;
@@ -56,7 +56,7 @@
         num {
             bindings = <
    &kp NUMBER_7  &kp NUMBER_5  &kp NUMBER_3      &kp NUMBER_1  &kp NUMBER_9  &kp NUMBER_8       &kp NUMBER_0   &kp NUMBER_2       &kp NUMBER_4   &kp NUMBER_6
- &kp LEFT_SHIFT     &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND       &kp F11       &kp F10  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp BACKSPACE
+ &kp LEFT_SHIFT     &sk LCTRL  &sk LEFT_ALT  &sk LEFT_COMMAND       &kp F11       &kp F10  &sk RIGHT_COMMAND  &sk RIGHT_ALT  &sk RIGHT_CONTROL  &kp BACKSPACE
          &kp F7        &kp F5        &kp F3            &kp F1        &kp F9        &kp F8            &kp F12         &kp F2             &kp F4         &kp F6
                                                         &sl 2     &kp LSHFT     &kp SPACE              &sl 1
             >;

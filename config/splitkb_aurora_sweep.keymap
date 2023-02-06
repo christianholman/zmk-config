@@ -26,18 +26,21 @@
         sbrack: shift_bracket {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT BRACKET";
+            #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         sbrace: shift_brace {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT BRACE";
+            #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         spar: shift_parenthesis {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT PARENTHESIS";
+            #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp RPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };

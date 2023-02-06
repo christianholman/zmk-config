@@ -1,4 +1,4 @@
-/*
+/* 
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -39,7 +39,7 @@
   &kp Q   &kp W   &kp F   &kp P      &kp B            &kp J   &kp L      &kp U       &kp Y  &kp SINGLE_QUOTE
   &kp A   &kp R   &kp S   &kp T      &kp G            &kp M   &kp N      &kp E       &kp I             &kp O
   &kp Z   &kp X   &kp C   &kp D      &kp V            &kp K   &kp H  &kp COMMA  &kp PERIOD          &kp SEMI
-                          &mo 1  &kp SPACE  &kp RIGHT_SHIFT   &mo 2
+                          &mo 1  &kp SPACE &mo 2 &kp RIGHT_SHIFT 
             >;
         };
 
@@ -68,6 +68,14 @@
          &kp F7        &kp F5        &kp F3            &kp F1        &kp F9        &kp F8            &kp F12         &kp F2             &kp F4         &kp F6
                                                        &trans        &trans        &trans             &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <NAV SYM>;
+            then-layer = <NUM>;
         };
     };
 };

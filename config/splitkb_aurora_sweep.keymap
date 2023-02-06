@@ -21,6 +21,27 @@
     combos {
         compatible = "zmk,combos";
     };
+    
+    behaviors {
+        sbrack: shift_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT BRACKET";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sbrace: shift_brace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT BRACE";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        spar: shift_parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT PARENTHESIS";
+            bindings = <&kp LPAR>, <&kp RPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -54,7 +75,7 @@
 
         sym {
             bindings = <
-   &kp ESC  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp TILDE  &kp CARET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET        &kp GRAVE
+   &kp ESC  &sbrace  &sbrack &spar &kp TILDE  &kp CARET  &kp ENTER &kp BACKSPACE  &kp RIGHT_BRACKET        &kp GRAVE
  &kp MINUS      &kp ASTERISK       &kp EQUAL             &kp UNDER   &kp DOLLAR   &kp HASH      &sk RIGHT_COMMAND    &sk RIGHT_ALT          &sk RCTRL  &kp RIGHT_SHIFT
   &kp PLUS          &kp PIPE          &kp AT             &kp SLASH  &kp PERCENT     &trans          &kp BACKSLASH    &kp AMPERSAND       &kp QUESTION  &kp EXCLAMATION
                                                             &trans       &trans     &trans                 &trans

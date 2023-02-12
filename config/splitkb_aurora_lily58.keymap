@@ -56,7 +56,7 @@
 
             bindings = <
     &bt BT_CLR   &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 2           &bt BT_SEL 3  &bt BT_SEL 4                       &trans            &trans     &trans             &trans     &trans         &trans
-        &trans         &trans         &kp LESS_THAN         &kp DOLLAR       &kp GREATER_THAN        &kp F5                       &trans  &kp LEFT_BRACKET  &kp MINUS  &kp RIGHT_BRACKET    &kp F11        &kp F12
+        &trans         &trans         &kp LESS_THAN         &kp DOLLAR       &kp GREATER_THAN        &kp AT                       &trans  &kp LEFT_BRACKET  &kp MINUS  &kp RIGHT_BRACKET    &kp F11        &kp F12
 &kp UNDERSCORE  &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS      &kp HASH                  &kp PERCENT    &kp LEFT_BRACE  &kp EQUAL    &kp RIGHT_BRACE   &kp PIPE  &kp SEMICOLON
         &trans         &trans             &kp COLON       &kp ASTERISK               &kp PLUS        &trans  &trans  &trans       &trans     &kp AMPERSAND  &kp CARET          &kp TILDE  &kp SLASH         &trans
                                                                 &trans                 &trans        &trans  &trans  &trans       &trans            &trans     &trans
